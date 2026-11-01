@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tomatoma Games</title>
+<meta name="description" content="Tomatoma Games is a small independent studio making cosy, colourful mobile and web games.">
+<style>
+:root { --bg: #fff7ef; --ink: #2b2320; --soft: #6b5d57; --accent: #d9483b; --card: #ffffff; --line: #f0e2d6; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: var(--accent); }
+header { max-width: 1040px; margin: 0 auto; padding: 56px 16px 24px; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 22px; letter-spacing: 0.2px; }
+.dot { width: 34px; height: 34px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #ff8a73, #d9483b 60%, #a8302a); box-shadow: inset 0 -3px 0 rgba(0,0,0,0.12); position: relative; }
+.dot::after { content: ""; position: absolute; top: -5px; left: 12px; width: 10px; height: 8px; border-radius: 6px 6px 0 6px; background: #4f9a4a; transform: rotate(-20deg); }
+h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.1; margin: 28px 0 12px; max-width: 760px; }
+.lead { font-size: 19px; color: var(--soft); max-width: 640px; margin: 0; }
+main { max-width: 1040px; margin: 0 auto; padding: 16px 16px 64px; }
+.games { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 24px; margin-top: 24px; }
+.game { background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 6px 18px rgba(80, 40, 20, 0.06); }
+.game img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; background: #eee; }
+.body { padding: 18px 20px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.game h2 { margin: 0; font-size: 23px; }
+.tag { display: inline-block; font-size: 13px; font-weight: 700; padding: 3px 10px; border-radius: 999px; background: #fdeee4; color: #8a4a2a; margin-right: 6px; }
+.tag.adult { background: #2b2320; color: #fff; }
+.game p { margin: 0; color: var(--soft); }
+.links { margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px; padding-top: 6px; }
+.btn { display: inline-block; text-decoration: none; font-weight: 700; font-size: 15px; padding: 9px 14px; border-radius: 10px; background: var(--accent); color: #fff; }
+.btn.ghost { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
+section.about { margin-top: 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+section.about h3 { margin: 0 0 6px; font-size: 19px; }
+section.about p { margin: 0; color: var(--soft); }
+footer { border-top: 1px solid var(--line); }
+footer div { max-width: 1040px; margin: 0 auto; padding: 24px 16px 40px; display: flex; flex-wrap: wrap; gap: 18px; color: var(--soft); font-size: 15px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><span class="dot" aria-hidden="true"></span>Tomatoma Games</div>
+  <h1>Small games with a lot of heart.</h1>
+  <p class="lead">We are an independent studio making colourful, hand-crafted games for phones and the web. Free to play, made to be picked up in a spare minute and loved for months.</p>
+</header>
+<main>
+  <div class="games">
+    <article class="game" id="cake-it-up">
+      <img src="img/cake-it-up.jpg" alt="Cake It Up: a layered cake in a pink patisserie" width="960" height="540">
+      <div class="body">
+        <div><span class="tag">Puzzle</span><span class="tag">All ages</span></div>
+        <h2>Cake It Up</h2>
+        <p>Sort the layers, stack the perfect cake. A relaxing sorting puzzle with hundreds of levels, daily cakes and a little bakery of your own.</p>
+        <div class="links">
+          <a class="btn" href="https://playgama.ai/play/xhbeaxfzao3d3o">Play on Playgama</a>
+          <a class="btn ghost" href="https://tomatomagamezs.itch.io/cake-it-up">itch.io</a>
+          <a class="btn ghost" href="https://gamemonetize.com/cake-it-up-game">GameMonetize</a>
+        </div>
+      </div>
+    </article>
+    <article class="game" id="stillwild">
+      <img src="img/stillwild.jpg" alt="Stillwild: a floating forest island with foxes and trees" width="720" height="620">
+      <div class="body">
+        <div><span class="tag">Focus</span><span class="tag">Coming soon</span></div>
+        <h2>Stillwild</h2>
+        <p>Put your phone down and a living sanctuary grows. Stay focused to raise foxes, fish and forests across three habitats. Leave too soon, and they turn to stone.</p>
+        <div class="links"><span class="btn ghost" aria-disabled="true">Coming to Google Play</span></div>
+      </div>
+    </article>
+    <article class="game" id="fangthrone">
+      <img src="img/fangthrone.jpg" alt="Fangthrone: two princesses in a moonlit castle" width="630" height="500">
+      <div class="body">
+        <div><span class="tag">Strategy</span><span class="tag adult">18+</span></div>
+        <h2>Fangthrone</h2>
+        <p>Rule a monster kingdom, conquer the realm and win the hearts of the most dangerous princesses alive. For adults only.</p>
+        <div class="links"><a class="btn" href="https://tomatomagamezs.itch.io/fangthrone">Play on itch.io</a></div>
+      </div>
+    </article>
+  </div>
+  <section class="about">
+    <div><h3>Art first</h3><p>Every game starts with how it looks. We hand-pick and refine every scene, character and creature.</p></div>
+    <div><h3>Play more, get more</h3><p>Our games reward the time you spend playing, not the time you spend waiting.</p></div>
+    <div><h3>Fair ads</h3><p>Our games are free. Optional ads give a boost when you want one, and never block the way forward.</p></div>
+  </section>
+</main>
+<footer>
+  <div>
+    <span>Tomatoma Games, Rehovot, Israel</span>
+    <a href="mailto:tomatoma.gamezs@gmail.com">tomatoma.gamezs@gmail.com</a>
+    <a href="privacy.html">Privacy policy</a>
+  </div>
+</footer>
+</body>
+</html>
