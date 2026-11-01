@@ -12,8 +12,6 @@ body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 syst
 a { color: var(--accent); }
 header { max-width: 1040px; margin: 0 auto; padding: 56px 16px 24px; }
 .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 22px; letter-spacing: 0.2px; }
-.dot { width: 34px; height: 34px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #ff8a73, #d9483b 60%, #a8302a); box-shadow: inset 0 -3px 0 rgba(0,0,0,0.12); position: relative; }
-.dot::after { content: ""; position: absolute; top: -5px; left: 12px; width: 10px; height: 8px; border-radius: 6px 6px 0 6px; background: #4f9a4a; transform: rotate(-20deg); }
 h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.1; margin: 28px 0 12px; max-width: 760px; }
 .lead { font-size: 19px; color: var(--soft); max-width: 640px; margin: 0; }
 main { max-width: 1040px; margin: 0 auto; padding: 16px 16px 64px; }
@@ -37,7 +35,7 @@ footer div { max-width: 1040px; margin: 0 auto; padding: 24px 16px 40px; display
 </head>
 <body>
 <header>
-  <div class="brand"><span class="dot" aria-hidden="true"></span>Tomatoma Games</div>
+  <div class="brand">Tomatoma Games</div>
   <h1>Small games with a lot of heart.</h1>
   <p class="lead">We are an independent studio making colourful, hand-crafted games for phones and the web. Free to play, made to be picked up in a spare minute and loved for months.</p>
 </header>
